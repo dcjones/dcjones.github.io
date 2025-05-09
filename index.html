@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Daniel C. Jones - Staff Scientist | Fred Hutchinson Cancer Center
+        </title>
+        <meta
+            name="description"
+            content="Professional website of Daniel C. Jones, Staff Scientist at Fred Hutchinson Cancer Center"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <!-- Replace with your actual photo URL -->
+            <img src="me.jpg" alt="Profile Photo" class="profile" />
+            <h1>Daniel C. Jones, Ph.D.</h1>
+            <div class="job-title">
+                Staff Scientist | Fred Hutchinson Cancer Center
+            </div>
+
+            <div
+                class="contact-info"
+                style="text-align: center; margin: 15px 0"
+            >
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:djones3@fredhutch.org"
+                        >djones3@fredhutch.org</a
+                    >
+                    <i class="fas fa-building"></i> Fred Hutchinson Cancer
+                    Center | <i class="fas fa-map-marker-alt"></i> Seattle, WA
+                </p>
+
+                <div class="social-links" style="margin-top: 10px">
+                    <a
+                        href="https://bsky.app/profile/dcjones.bsky.social"
+                        target="_blank"
+                        title="Bluesky"
+                        ><i class="fab fa-bluesky"></i
+                    ></a>
+                    <a
+                        href="https://github.com/dcjones"
+                        target="_blank"
+                        title="GitHub"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                        href="https://orcid.org/0000-0001-7055-3119"
+                        target="_blank"
+                        title="ORCID"
+                        ><i class="fab fa-orcid"></i
+                    ></a>
+                    <a
+                        href="https://scholar.google.com/citations?user=RWhV_TAAAAAJ"
+                        target="_blank"
+                        title="Google Scholar"
+                        ><i class="fas fa-graduation-cap"></i
+                    ></a>
+                </div>
+            </div>
+
+            <div class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#publications">Publications</a>
+            </div>
+        </header>
+
+        <section id="about" class="section">
+            <div class="bio">
+                <p>
+                    I am a Staff Scientist at the Fred Hutchinson Cancer Center,
+                    where I focus on machine learning problems involving spatial
+                    transcriptomics. I have a Ph.D. in computer science from the
+                    University of Washington, where I worked on RNA-Seq
+                    statistics.
+                </p>
+
+                <p>
+                    I write a lot of Rust, Julia, and Python, bake croissants,
+                    read history and literary fiction, pet cats, etc.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+
+            <ul class="projects-list">
+                <li class="project-item">
+                    <h3 class="project-title">
+                        Proseg: probabilistic cell segmentation
+                    </h3>
+                    <div class="project-description">
+                        <p>
+                            Fast and accurate cell segmentation for spatial
+                            transcriptomics borrowing methods from cell
+                            simulation.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/dcjones/proseg"
+                            target="_blank"
+                            ><i class="fab fa-github"></i> GitHub</a
+                        >
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <h3 class="project-title">
+                        Maxspin: Maximization of Spatial Information
+                    </h3>
+                    <div class="project-description">
+                        <p>
+                            An information theoretic approach to quantifying the
+                            degree of spatial organization in spatial
+                            transcriptomics (or other spatial omics) data. This
+                            method computes spatial information scores for genes
+                            to identify spatially varying expression patterns.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/dcjones/maxspin"
+                            target="_blank"
+                            ><i class="fab fa-github"></i> GitHub</a
+                        >
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <h3 class="project-title">
+                        COITrees: Cache Oblivious Interval Trees
+                    </h3>
+                    <div class="project-description">
+                        <p>
+                            A very fast interval tree data structure for overlap
+                            queries of static integer intervals, with genomic
+                            intervals in mind. Implemented in Rust, COITrees
+                            uses a van Emde Boas layout for improved cache
+                            locality and features SIMD optimizations through
+                            AVX2 and Neon instructions when available.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/dcjones/coitrees"
+                            target="_blank"
+                            ><i class="fab fa-github"></i> GitHub</a
+                        >
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <h3 class="project-title">
+                        Gadfly: Grammar of Graphics for Julia
+                    </h3>
+                    <div class="project-description">
+                        <p>
+                            A plotting and data visualization system for Julia
+                            based on the Grammar of Graphics. Gadfly creates
+                            publication quality graphics with an intuitive,
+                            consistent interface and tight integration with
+                            DataFrames.jl. Features include interactive
+                            zooming/panning, SVG/PNG/PDF/PS output formats, and
+                            support for a wide range of plot types.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/GiovineItalia/Gadfly.jl"
+                            target="_blank"
+                            ><i class="fab fa-github"></i> GitHub</a
+                        >
+                        <a href="https://gadflyjl.org/stable/" target="_blank"
+                            ><i class="fas fa-external-link-alt"></i> Website</a
+                        >
+                    </div>
+                </li>
+            </ul>
+
+            <p style="text-align: center; margin-top: 30px">
+                <a href="https://github.com/dcjones" target="_blank"
+                    ><i class="fab fa-github"></i> View all my projects on
+                    GitHub</a
+                >
+            </p>
+        </section>
+
+        <section id="publications" class="section">
+            <h2>Notable Publications</h2>
+
+            <ul class="publications-list">
+                <li class="publication-item">
+                    <h3 class="publication-title">
+                        Cell Simulation as Cell Segmentation
+                    </h3>
+                    <div class="publication-authors">
+                        Daniel C Jones, Anna E Elz, Azadeh Hadadianpour, Heeju
+                        Ryu, David R Glass, Evan W Newell
+                    </div>
+                    <div class="publication-journal">Nature Methods (2025)</div>
+                    <p>
+                        Single-cell spatial transcriptomics promises a highly
+                        detailed view of a cell's transcriptional state and
+                        microenvironment, yet inaccurate cell segmentation can
+                        render this data murky. We adopt methods from ab initio
+                        cell simulation to rapidly infer morphologically
+                        plausible cell boundaries that preserve cell type
+                        heterogeneity.
+                    </p>
+                    <a
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11071468/"
+                        target="_blank"
+                        class="button"
+                        >Read Paper</a
+                    >
+                </li>
+
+                <li class="publication-item">
+                    <h3 class="publication-title">
+                        An Information Theoretic Approach to Detecting Spatially
+                        Varying Genes
+                    </h3>
+                    <div class="publication-authors">
+                        Daniel C. Jones, Patrick Danaher, Youngmi Kim, Joseph M.
+                        Beechem, Raphael Gottardo, Evan W. Newell
+                    </div>
+                    <div class="publication-journal">
+                        Cell Reports Methods (2023)
+                    </div>
+                    <p>
+                        A key step in spatial transcriptomics is identifying
+                        genes with spatially varying expression patterns. We
+                        adopt an information theoretic perspective to this
+                        problem by equating the degree of spatial coherence with
+                        the Jensen-Shannon divergence between pairs of nearby
+                        cells and pairs of distant cells.
+                    </p>
+                    <a
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10326450/"
+                        target="_blank"
+                        class="button"
+                        >Read Paper</a
+                    >
+                </li>
+
+                <li class="publication-item">
+                    <h3 class="publication-title">
+                        Polee: RNA-Seq analysis using approximate likelihood
+                    </h3>
+                    <div class="publication-authors">
+                        Daniel C. Jones, Walter L. Ruzzo
+                    </div>
+                    <div class="publication-journal">
+                        NAR Genomics and Bioinformatics (2021)
+                    </div>
+                    <p>
+                        We propose a new method of approximating the likelihood
+                        function of a sparse mixture model for RNA-Seq analysis,
+                        using a technique called the Pólya tree transformation.
+                        This approximation achieves most of the benefits of full
+                        probabilistic models with a fraction of the
+                        computational costs, leading to more accurate detection
+                        of differential transcript expression and transcript
+                        coexpression.
+                    </p>
+                    <a
+                        href="https://academic.oup.com/nargab/article/3/2/lqab046/6284195"
+                        target="_blank"
+                        class="button"
+                        >Read Paper</a
+                    >
+                </li>
+
+                <li class="publication-item">
+                    <h3 class="publication-title">
+                        Compression of next-generation sequencing reads aided by
+                        highly efficient de novo assembly
+                    </h3>
+                    <div class="publication-authors">
+                        Daniel C. Jones, Walter L. Ruzzo, Xinxia Peng, Michael
+                        G. Katze
+                    </div>
+                    <div class="publication-journal">
+                        Nucleic Acids Research (2012)
+                    </div>
+                    <p>
+                        We present Quip, a lossless compression algorithm for
+                        next-generation sequencing data in the FASTQ and SAM/BAM
+                        formats. Using a novel de novo assembly algorithm with a
+                        probabilistic data structure to dramatically reduce
+                        memory requirements, we developed the first
+                        assembly-based compressor, effectively reducing dataset
+                        sizes to &lt;15% of their original size.
+                    </p>
+                    <a
+                        href="https://academic.oup.com/nar/article/40/22/e171/1137542"
+                        target="_blank"
+                        class="button"
+                        >Read Paper</a
+                    >
+                </li>
+
+                <li class="publication-item">
+                    <h3 class="publication-title">
+                        A new approach to bias correction in RNA-Seq
+                    </h3>
+                    <div class="publication-authors">
+                        Daniel C. Jones, Walter L. Ruzzo, Xinxia Peng, Michael
+                        G. Katze
+                    </div>
+                    <div class="publication-journal">Bioinformatics (2012)</div>
+                    <p>
+                        We present a new method to measure and correct for
+                        sequence bias in RNA-Seq experiments using a simple
+                        graphical model. Our model does not rely on existing
+                        gene annotations, and model selection is performed
+                        automatically, making it applicable with few assumptions
+                        and effectively decreasing bias while increasing
+                        uniformity in read coverage.
+                    </p>
+                    <a
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3315719/"
+                        target="_blank"
+                        class="button"
+                        >Read Paper</a
+                    >
+                </li>
+            </ul>
+
+            <p style="text-align: center; margin-top: 30px">
+                <a
+                    href="https://scholar.google.com/citations?user=RWhV_TAAAAAJ"
+                    target="_blank"
+                    ><i class="fas fa-graduation-cap"></i> View all publications
+                    on Google Scholar</a
+                >
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Daniel C. Jones, Ph.D. All rights reserved.</p>
+            <p>Last updated: April 2024</p>
+        </footer>
+    </body>
+</html>
